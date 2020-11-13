@@ -27,7 +27,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Python.A. Двоичный поиск">
+  <component name="RunManager" selected="Python.B. Ближайшее слева">
     <configuration name="A. Двоичный поиск" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Двоичный поиск" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -41,6 +41,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/A. Двоичный поиск.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="B. Ближайшее слева" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Двоичный поиск" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/B. Ближайшее слева.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -72,6 +93,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.B. Ближайшее слева" />
         <item itemvalue="Python.A. Двоичный поиск" />
       </list>
     </recent_temporary>
@@ -88,22 +110,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2539" height="401" key="GridCell.Tab.0.bottom" timestamp="1605277690461">
+    <state width="2539" height="401" key="GridCell.Tab.0.bottom" timestamp="1605286050099">
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
-    <state width="2539" height="401" key="GridCell.Tab.0.bottom/0.40.2560.1400@0.40.2560.1400" timestamp="1605277690461" />
-    <state width="2539" height="401" key="GridCell.Tab.0.center" timestamp="1605277690461">
+    <state width="2539" height="401" key="GridCell.Tab.0.bottom/0.40.2560.1400@0.40.2560.1400" timestamp="1605286050099" />
+    <state width="2539" height="401" key="GridCell.Tab.0.center" timestamp="1605286050099">
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
-    <state width="2539" height="401" key="GridCell.Tab.0.center/0.40.2560.1400@0.40.2560.1400" timestamp="1605277690461" />
-    <state width="2539" height="401" key="GridCell.Tab.0.left" timestamp="1605277690461">
+    <state width="2539" height="401" key="GridCell.Tab.0.center/0.40.2560.1400@0.40.2560.1400" timestamp="1605286050099" />
+    <state width="2539" height="401" key="GridCell.Tab.0.left" timestamp="1605286050099">
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
-    <state width="2539" height="401" key="GridCell.Tab.0.left/0.40.2560.1400@0.40.2560.1400" timestamp="1605277690461" />
-    <state width="2539" height="401" key="GridCell.Tab.0.right" timestamp="1605277690461">
+    <state width="2539" height="401" key="GridCell.Tab.0.left/0.40.2560.1400@0.40.2560.1400" timestamp="1605286050099" />
+    <state width="2539" height="401" key="GridCell.Tab.0.right" timestamp="1605286050099">
       <screen x="0" y="40" width="2560" height="1400" />
     </state>
-    <state width="2539" height="401" key="GridCell.Tab.0.right/0.40.2560.1400@0.40.2560.1400" timestamp="1605277690461" />
+    <state width="2539" height="401" key="GridCell.Tab.0.right/0.40.2560.1400@0.40.2560.1400" timestamp="1605286050099" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

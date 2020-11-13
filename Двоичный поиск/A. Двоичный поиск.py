@@ -30,9 +30,9 @@ def bin_search(list1, n):
 
 
 
-x=list(map(int, input().split()))
-for i in range(len(x)):
-    if bin_search(array,x[i]):
+asked=list(map(int, input().split()))
+for i in range(len(asked)):
+    if bin_search(array,asked[i]):
         print("YES")
     else:print("NO")
 

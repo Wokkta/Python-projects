@@ -1,3 +1,4 @@
+'''https://codeforces.com/edu/course/2/lesson/6/1/practice/contest/283911/problem/B'''
 n,k= list(map(int, input().split()))
 array=list(map(int, input().split()))
 

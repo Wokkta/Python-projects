@@ -1,3 +1,4 @@
+'''https://codeforces.com/contest/1337/problem/B'''
 t=int(input())
 massa=[]
 def test(x,n,m):

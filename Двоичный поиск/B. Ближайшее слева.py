@@ -1,7 +1,7 @@
 '''https://codeforces.com/edu/course/2/lesson/6/1/practice/contest/283911/problem/B'''
 n,k= list(map(int, input().split()))
 array=list(map(int, input().split()))
-
+asked=list(map(int, input().split()))
 array=array[:n]
 def bin_search(list1, searching_value):
     #return true or false
@@ -24,9 +24,5 @@ def bin_search(list1, searching_value):
             return 0
     return low
 
-
-
-
-asked=list(map(int, input().split()))
 for i in range(len(asked)):
     print(bin_search(array,asked[i])+1)

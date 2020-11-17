@@ -9,7 +9,7 @@ def test(s,n):
 		dragons["bonus {}".format(i)]=bonus
 	while dragons!={}:
 		for i in range(n):
-			try:
+			try: #without try and except
 				if s>int(dragons["power {}".format(i)]):
 					del dragons["power {}".format(i)]
 					s+=dragons["bonus {}".format(i)]

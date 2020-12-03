@@ -1,27 +1,26 @@
 # https://codeforces.com/group/XWOeQO4RLM/contest/206799/problem/G
 studens=int(input())
-abilities=list(map(int,input().split()))
-comands=[]
-abilities=str(abilities)
-abilities=abilities[1:len(abilities)-1]
+abilities=input()
+abilities=abilities[::2]
 abilities=list(abilities)
-count = 1
-while ',' in abilities:
-	abilities.remove(',')
-	abilities.remove(abilities[count])
-	count+=1
-print(abilities, 'abilities')
-
-
-
-
-
-print(q,' q ' ,q-diff,'q - diff',len(abilities),' len ',comands, 'comands')
-print(len(comands)//3)
-print(abilities,'abilities after')
-print("comands",comands)
-while comands:
-	print(comands[0],' ',comands[1],' ',comands[2])
-	comands.remove(comands[0])
-	comands.remove(comands[0])
-	comands.remove(comands[0])
+for i in range(len(abilities)):
+	abilities[i]=int(abilities[i])
+comands=[]
+diff = 1
+while abilities!=[]:
+	for i in abilities:
+		print(111)
+		if len(comands)<4:
+			comands.append(i)
+			comands.append('index = '+str(abilities.index(i)+diff)+' , ')
+			abilities.remove(i)
+			diff+=1
+			print(222)
+		elif i!=comands[-2] and i!=comands[-4]:
+			comands.append(i)
+			comands.append('index = '+str(abilities.index(i)+diff)+' , ')
+			abilities.remove(i)
+			diff+=1
+			print(333)
+print(' comands ')
+print(*comands)

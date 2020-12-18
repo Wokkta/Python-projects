@@ -1,28 +1,32 @@
-n,m = input().split()
+n,m = map(float,input().split())
 values=[]
+summ=0
+ans=[]
 for i in range(int(m)):
     value=float(input())
     values.append(value)
-indexes=[]
-n = int(n)
-global array_summ
-array_summ=[0]
-maximum=-1
-def find_max(array):
-    maximum=-1
-    for i in range(len(array) ):
-        array_summ[0]+=array[i]
-        if array[i]>maximum:
-            maximum=array[i]
-    indexes.append(i)
-    return maximum
-find_max(values)
-if array_summ[0]<n:
-    print('No')
+    summ+=value
+if float(summ)<n:
+    print("NO")
 else:
+    maximum=-1
+    indexs=[]
     while n>0:
-        n-=maximum
-        values.remove(values[values.index(maximum)])
-        find_max(values)
-    for i in range(len(indexes)):
-        print(indexes[i])
+        maximum = -1
+        for i in range(len(values)):
+            if values[i] > maximum:
+                maximum = values[i]
+                count=i
+        '''print(maximum,' maximum ',values, ' values ',count+1,' index+1')'''
+        indexs.append(count+1)
+        n -= maximum
+        values.remove(maximum)
+    while indexs:
+        min=2 *summ
+        for i in range(len(indexs)):
+            if indexs[i]<min:
+                min=indexs[i]
+        ans.append(min)
+        indexs.remove(min)
+    for i in range(len(ans)):
+        print(ans[i])

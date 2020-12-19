@@ -15,32 +15,35 @@ maxz=-3000
 minx=3000
 miny=3000
 minz=3000
-countx=0
-county=1
-countz=2
 not_in_paralipipid=[]
 for i in range(paralipipids):
+    countx = 0
+    county = 1
+    countz = 2
     for k in range(0,24,1):
         if countx==0:
-            if paralipipids_data[i][k]>=maxx:
+            print('inside x ')
+            if paralipipids_data[i][k]>maxx:
                 maxx=paralipipids_data[i][k]
-            elif paralipipids_data[i][k]<=minx:
+            elif paralipipids_data[i][k]<minx:
                 minx=paralipipids_data[i][k]
             countz-=1
             county-=1
             countx=3
         elif county==0:
-            if paralipipids_data[i][k]>=maxy:
+            print('inside y  ')
+            if paralipipids_data[i][k]>maxy:
                 maxy=paralipipids_data[i][k]
-            elif paralipipids_data[i][k]<=miny:
+            elif paralipipids_data[i][k]<miny:
                 miny=paralipipids_data[i][k]
             countz-=1
             countx-=1
             county=3
         elif countz==0:
-            if paralipipids_data[i][k]>=maxz:
+            print('inside z ')
+            if paralipipids_data[i][k]>maxz:
                 maxz=paralipipids_data[i][k]
-            elif paralipipids_data[i][k]<=minz:
+            elif paralipipids_data[i][k]<minz:
                 minz=paralipipids_data[i][k]
             county-=1
             countx-=1
@@ -55,6 +58,7 @@ for i in range(sphere):
         if countx==0:
             if position+radius>maxx or position-radius>maxx or position+radius<minx or position-radius<minx:
                 not_in_paralipipid.append(i)
+                print(position,' spheres_data[{}][{}] '.format(i,k),radius, ' radius ', maxx,' maxx ',minx,' minx ')
                 break
                 countx=3
                 county-=1
@@ -62,6 +66,7 @@ for i in range(sphere):
         elif county ==0:
             if position+radius>maxy  or position-radius>maxy or position+radius<miny  or position-radius<miny :
                 not_in_paralipipid.append(i)
+                print(position,' spheres_data[{}][{}] '.format(i,k),radius, ' radius ', maxy,' maxy ',miny,' miny ')
                 break
                 county =3
                 countx-=1
@@ -69,6 +74,7 @@ for i in range(sphere):
         elif countz ==0:
             if position+radius>maxz  or position-radius>maxz or position+radius<minz  or position-radius<minz :
                 not_in_paralipipid.append(i)
+                print(position,' spheres_data[{}][{}] '.format(i,k),radius, ' radius ', maxz,' maxz ',minz,' minz ')
                 break
                 countz =3
                 countx-=1

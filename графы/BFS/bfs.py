@@ -8,6 +8,7 @@ for i in range(M):
 for i in graph:
     print(i,' ',graph[i])
 distances=[None]*N
+parents=[None]*N # все взаимодействия для востановления кратчайшего пути
 start_vertex=0
 distances[start_vertex]=0
 queue=deque([start_vertex])
@@ -16,8 +17,16 @@ while queue:
     for neigh_v in graph[cur_v]:
         if distances[neigh_v] is None:
             distances[neigh_v]=distances[cur_v]+1
+            parents[neigh_v]=cur_v
             queue.append(neigh_v)
 print(distances)
+end_vertex=9
+path=[end_vertex]
+parent=parents[end_vertex]
+while parent is not None:
+    path.appenf(parent)
+    parent=parents(parent)
+print()
 '''example of input
 15 16
 0 1

@@ -9,7 +9,7 @@ for i in range(n):
     data.append(value)
 for i in data:
     print(i)
-for i in range(n):
+'''for i in range(n):
     for j in range(m):
         if 0<i<n-1 and 0<j<m-1:
         data['{},{}'.format(i,j)].add(data[i][j])
@@ -52,7 +52,7 @@ for i in range(n):
 for i in data:
     print(i,data[i])
 #use dfs or bfs
-
+'''
 '''test input
 5 4
 3 2 0 0

@@ -12,9 +12,9 @@ print(paralipipids_data)
 maxx=-3000
 maxy=-3000
 maxz=-3000
-minx=3000
-miny=3000
-minz=3000
+minx = 3000
+miny = 3000
+minz = 3000
 not_in_paralipipid=[]
 for i in range(paralipipids):
     countx = 0
@@ -25,29 +25,35 @@ for i in range(paralipipids):
             print('inside x ')
             if paralipipids_data[i][k]>maxx:
                 maxx=paralipipids_data[i][k]
+                print(paralipipids_data[i][k],' paralipipids_data[{}][{}]'.format(i,k))
             elif paralipipids_data[i][k]<minx:
+                print('min changed')
                 minx=paralipipids_data[i][k]
             countz-=1
             county-=1
-            countx=3
+            countx=2
         elif county==0:
             print('inside y  ')
             if paralipipids_data[i][k]>maxy:
                 maxy=paralipipids_data[i][k]
+                print(paralipipids_data[i][k],' paralipipids_data[{}][{}]'.format(i,k))
             elif paralipipids_data[i][k]<miny:
+                print('min changed')
                 miny=paralipipids_data[i][k]
             countz-=1
             countx-=1
-            county=3
+            county=2
         elif countz==0:
             print('inside z ')
             if paralipipids_data[i][k]>maxz:
                 maxz=paralipipids_data[i][k]
+                print(paralipipids_data[i][k],' paralipipids_data[{}][{}]'.format(i,k))
             elif paralipipids_data[i][k]<minz:
+                print('min changed')
                 minz=paralipipids_data[i][k]
             county-=1
             countx-=1
-            countz=3
+            countz=2
 for i in range(sphere):
     countx = 0
     county = 1
@@ -81,3 +87,9 @@ for i in range(sphere):
                 county-=1
 for i in range(len(not_in_paralipipid)):
     print(not_in_paralipipid[i]+1)
+'''test input
+2 1
+1 1 1 1
+10 10 10 2
+0 0 0 1 0 0 0 0 1 0 0 10 1 0 0 0 0 1 0 1 0 0 1 0 0 1 0 1 0
+'''

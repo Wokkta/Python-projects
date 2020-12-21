@@ -32,3 +32,4 @@ for i in range(len(lens)):
             lens[i], lens[g] = lens[g], lens[i]
 if flag:
     print(ans[str(lens[-1])])
+

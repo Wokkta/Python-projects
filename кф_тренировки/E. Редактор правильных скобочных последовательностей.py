@@ -42,4 +42,3 @@ def do_operation(string,position,comands):
             string=string[:end_position]+string[position:]
     do_operation(string,position,comands[1:])
 do_operation(psp,position,comands)
-'''ok'''

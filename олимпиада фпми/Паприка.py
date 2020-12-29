@@ -12,14 +12,20 @@ parents=[None]*N # все взаимодействия для востановл
 start_vertex=0
 distances[start_vertex]=0
 queue=deque([start_vertex])
+counter=0
 while queue:
     cur_v=queue.popleft()
     for neigh_v in graph[cur_v]:
-        if distances[neigh_v] is None:
+        counter+=1
+        if distances[neigh_v] is  None:
             distances[neigh_v]=distances[cur_v]+1
             parents[neigh_v]=cur_v
             queue.append(neigh_v)
-print(distances)
+        if distances[neigh_v] is  not None:
+            counter+=1
+            break
+print(distances, ' distances ')
+print(counter,' counter ')
 end_vertex=9
 path=[end_vertex]
 parent=parents[end_vertex]
@@ -27,23 +33,3 @@ while parent is not None:
     path.append(parent)
     parent=parents(parent)
 print()
-'''example of input
-15 16
-0 1
-0 12
-0 10
-0 11
-2 6
-1 7
-3 11
-4 10
-5 8
-5 13
-6 10
-7 13
-8 12
-9 11
-11 12
-11 14
-
-'''

@@ -33,3 +33,7 @@ while parent is not None:
     path.append(parent)
     parent=parents(parent)
 print()
+'''test input
+3 1
+2 3 2
+2 1

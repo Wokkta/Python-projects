@@ -1,5 +1,5 @@
-# 17
-# 64
+#### 17
+#64
 '''
 step = 1
 count = 0
@@ -11,7 +11,7 @@ for i in range(4563, 7912, step):
     	maxi=i
 print(maxi,count)
 '''
-# 66
+#66
 '''
 count=0
 step=1
@@ -25,7 +25,7 @@ for i in range(333666,666999+1,step):
 		maxi=i
 print(maxi,count)
 '''
-# 67
+#67
 '''
 count=0
 for i in range(100001,900010):
@@ -33,7 +33,7 @@ for i in range(100001,900010):
 		count+=1
 		maxi=i
 print(maxi,count)'''
-# 68
+#68
 '''
 count=0
 mini=10**5
@@ -44,7 +44,7 @@ for i in range(2079,43168):
 		if i<mini:
 			mini=i
 print(count,mini)'''
-# 69
+#69 
 '''
 count=0
 for i in range(1388,63253):
@@ -53,7 +53,7 @@ for i in range(1388,63253):
 		maxi=i
 print(count,maxi)
 '''
-# 71
+#71
 '''
 count=0
 mini=10**9
@@ -64,7 +64,7 @@ for i in range(1031,125889):
 			mini=i
 print(count,mini)
 '''
-# 70
+#70
 '''
 count=0
 for i in range(2894,174883):
@@ -79,7 +79,7 @@ for i in range(2894,174883):
 				mas=i
 print(count,mas)
 '''
-# 72
+#72
 '''
 count=0
 maxi=0
@@ -97,7 +97,7 @@ for i in range(2848,109500):
 				maxi=i
 print(count,maxi)
 '''
-# 27
+#27
 '''
 mini=10000
 count=0
@@ -109,7 +109,7 @@ for i in range(3712,8433):
 			count+=1
 print(count,mini)
 '''
-# 30
+#30
 '''
 mini=10000
 summ=0
@@ -121,7 +121,7 @@ for i in range(1529,9483):
 			summ+=i
 print(mini,summ)
 '''
-# 33
+#33
 '''
 mini=1111111111111111
 maxi=0
@@ -134,7 +134,7 @@ for i in range(1000,10000):
 				mini=i
 print(mini,maxi)
 '''
-# 38
+#38
 '''
 count=0
 maxi=0
@@ -145,7 +145,7 @@ for i in range(2461,9720):
 			maxi=i
 print(count,maxi)
 '''
-# 40
+#40
 '''
 count=0
 mini=1010101001
@@ -162,7 +162,7 @@ for i in range(1871,9198):
 			count+=1
 print(count,mini)
 '''
-# 42
+#42
 '''
 count=0
 mini=100000
@@ -174,7 +174,7 @@ for i in range(2495,7084):
 				mini=i
 print(count,mini)
 '''
-# 43
+#43
 '''
 count=0
 mini=1111111111

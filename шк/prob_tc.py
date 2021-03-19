@@ -80,6 +80,8 @@ while counter!=6:
 	x+=1
 '''
 #26
+# не дооптимизировал, тк времени не хватило, понимаю, что надо 
+# сделать, чтобы сумма была максимально близкая
 '''
 f=open('input26_01.txt','r')
 flag=0
@@ -91,9 +93,20 @@ for line in f:
 		flag=1
 	else:
 		values.append(line.strip())
-def bag(values,weight):
+def bag(values,maxweight):
+	alls=[0]
+	#maxweight=maxweight.sort()
+	while sum(alls)<maxweight:
+		alls.append(int(values.pop(values.index(min(values)))))
+	if sum(alls)> maxweight:
+		alls.pop(-1)
+	#alls_copy=alls
+	#alls_copy.remove(max(alls_copy))
+	#if maxweight- sum(alls)>=max(alls)-max(alls_copy):
+
+	print(len(alls)-1,max(alls))
+bag(values,S)
 '''
-''' ne smog  :((( '''
 #27
 
 ''' из файла вырезаю первую строку'''
@@ -159,3 +172,4 @@ for x in range(1007,8011):
 		simvol=x
 print(counter,simvol)
 '''
+#18 друг как-т через excel решает, я не додумался как

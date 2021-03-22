@@ -42,6 +42,7 @@ def f(n,start):
 		return 1
 	s=f(n+1,start)
 	s+=f(n*2,start)
+	s+=f(n*2+1,start)
 	return s
 print(f(10,30)*f(1,10))
 '''

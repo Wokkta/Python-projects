@@ -1,9 +1,6 @@
 letters = 'abcdefgh'
 numbers = '12345678'
-graph = {}
-for l in letters:
-    for n in numbers:
-        graph[l+n] = set()
+graph = {l + n: set() for l in letters for n in numbers}
 
 
 def add_edge(v1, v2):

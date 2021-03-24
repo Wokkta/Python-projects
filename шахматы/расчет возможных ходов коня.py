@@ -36,14 +36,14 @@ for i in range(8):
             v2 = letters[i+1]+numbers[j-2]
             add_edge(v1, v2)
         if 0 <= i-1 < 8 and 0 <= j+2 < 8:
-            v2 = letters[i-1]+numbers[j+1]
+            v2 = letters[i-1]+numbers[j+2]
             add_edge(v1, v2)
         if 0 <= i-1 < 8 and 0 <= j-2 < 8:
             v2 = letters[i-1]+numbers[j-2]
             add_edge(v1, v2)
-'''
+
 for i in graph:
     print(i, ' ', graph[i])
-'''
+
 k="g7"
 print(k,' ',graph[k])

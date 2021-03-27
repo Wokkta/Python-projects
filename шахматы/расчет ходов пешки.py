@@ -27,4 +27,4 @@ for i in range(8):
             v2 = letters[rotation*(i-1)]+numbers[rotation*(j+1)]
             add_edge(v1, v2)
 for i in graph:
-    print(i, ' ', graph[i])
+    print(i, ' ', sorted(graph[i]))

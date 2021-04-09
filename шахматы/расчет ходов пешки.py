@@ -11,7 +11,7 @@ else:
 def add_edge(v1, v2):
     graph[v1].add(v2)
     graph[v2].add(v1)
-
+             
 # выводит возможные ходы в обе стороны
 for i in range(8):
     for j in range(8):
@@ -27,4 +27,4 @@ for i in range(8):
             v2 = letters[rotation*(i-1)]+numbers[rotation*(j+1)]
             add_edge(v1, v2)
 for i in graph:
-    print(i, ' ', sorted(graph[i]))
+    print(i, ' ', graph[i])

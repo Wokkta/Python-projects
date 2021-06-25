@@ -13,4 +13,4 @@ for n in range(106000000, 107000001):
         if(int(sqrt(n // 2))**2 == n//2):
             if(check(int(sqrt(n // 2)))):
                 print(n)
-print( % (time.time() - start_time))
+print('%s' % (time.time() - start_time))
